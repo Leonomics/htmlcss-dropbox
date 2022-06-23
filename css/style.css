@@ -45,13 +45,23 @@ header{
     background-color: aqua;
 }
 
+.hero-title {
+    margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
 .hero-content   {
-    display: row;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    flex-basis: 40%;
+    
 }
 
 .jumbo  {
-    width: 600px;
+    
+    flex-basis: 60%;
 }
 
 /*debug*/
