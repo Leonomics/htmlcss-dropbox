@@ -36,6 +36,10 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
+.row    { 
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 /*HEADER*/
@@ -67,6 +71,7 @@ nav button  {
     background-color: blue;
     color: white;
     padding: 10px;
+    cursor: pointer;
 }
 
 header{
@@ -75,28 +80,90 @@ header{
     align-items: center;
 }
 
-/*hero*/
-.hero-section   {
+/*HERO*/
+#hero   {
+    background-color: lightblue;
+    padding-top: 100px;
+}
+
+.hero__title    {
+    font-size: 74px;
+    margin-bottom: 48px;
+}
+
+.row    {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4  {
+    flex-basis: calc(100%/3);
+}
+
+.col-8  {
+    flex-basis: calc(100%*2/3);
+}
+
+.col-12 {
+    flex-basis: calc(100%/1);
+}
+
+/*COMPONENTS*/
+.hero__button {
+    display: inline-block;
+    line-height: 44px;
+    font-size: 18px;
+    padding: 0 16px;
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+.hero__content  {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    gap: 30px;
+    align-items: flex-start;
 }
 
-.hero-title {
-    margin-bottom: 20px;
-    margin-top: 60px;
-    text-align: center;
+.hero__content i    {
+    margin-top: auto;
+    font-size: 64px;
+    padding-bottom: 10px;
 }
 
-.hero-content   {
+.row img  {
+    aspect-ratio: 16/9;
+}
+
+/*PLAN*/
+
+.radio-input .circle    {
+    display: block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.radio-input    {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-basis: 40%;
-    
+    gap: 10px;
+    align-items: center;
 }
 
-.jumbo  {
-    
-    flex-basis: 60%;
+.radio-input.checked .circle    {
+    border-color: blue;
+    border-width: 4px;
 }
+
+.radio-wrapper  {
+    gap:64px;
+}
+
+.card-wrapper *   {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+
