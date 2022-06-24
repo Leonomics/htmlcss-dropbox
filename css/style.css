@@ -215,3 +215,9 @@ header{
 }
 
 
+/*BUSINESS*/
+
+
+.card-frame {
+    flex-basis: 33%;
+}
