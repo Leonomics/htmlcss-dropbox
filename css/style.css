@@ -188,4 +188,30 @@ header{
     color: white;
 }
 
+.number-of-users::before  {
+    font-family: "Font Awesome 5 Free";
+    content: '\f007'
+}
+
+
+/*PARTNER*/
+
+.partner-row    {
+    display: flex;
+
+}
+
+.partner-text   {
+    flex-basis: 40%;
+    padding: 30px;
+}
+
+.partner-title  {
+    margin-bottom: 30px;
+}
+
+.trova-un-partner-button {
+    margin-top: 30px;
+}
+
 
