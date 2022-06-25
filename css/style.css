@@ -226,9 +226,18 @@ header{
     padding-top: 40px;
     padding-bottom: 20px;
     font-size: 40px;
+    margin-top: 50px;
 }
+#business-section .row {
+    display: flex;
+}
+
 .card-frame {
-    flex-basis: 33,33%;
+    flex-basis: calc(100%/3);
+}
+
+.card-frame .card-title    {
+    margin-bottom: 20px;
 }
 
 /*TESTIMONIALS*/
