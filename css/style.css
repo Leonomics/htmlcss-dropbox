@@ -301,3 +301,38 @@ header{
 }
 
 /*FAQ*/
+.dropdown-content   {
+    display: none;
+}
+.dropdown   {
+    margin: 20px;
+}
+
+
+
+
+/*FOOTER*/
+
+.page-footer h2    {
+    margin-top:20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-row     {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-column  {
+    flex-basis: calc(100%/5);
+}
+
+.page-footer    {
+    background-color: black;
+    color: white;
+}
+
+.page-footer li {
+    padding: 10px;
+}
