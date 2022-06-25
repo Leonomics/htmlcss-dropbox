@@ -10,7 +10,7 @@ img   {
     display: block;
 }
 
-a:not(.testimonial a)  {
+a:not(.testimonials-link)  {
     text-decoration: none;
     color: currentColor;
 }
@@ -228,5 +228,76 @@ header{
     font-size: 40px;
 }
 .card-frame {
-    flex-basis: 33%;
+    flex-basis: 33,33%;
 }
+
+/*TESTIMONIALS*/
+
+.testimonials-block     {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33.33%;
+}
+
+.testimonials-text  {
+    flex-basis: 33.33%;
+    background-color: lightgrey;
+    align-content: center;
+    padding: 10px;
+}
+
+.testimonials-text img  {
+    width: 400px;
+}
+
+.testimonial   {
+    flex-basis: calc(100%/2);
+    align-content: center;
+    padding: 10px;
+    aspect-ratio: 1;
+}
+
+
+.testimonial1   {
+    background-color: lightgreen;
+}
+
+.testimonial2   {
+    background-color: rebeccapurple;
+}
+
+.testimonial3   {
+    background-color: lightskyblue;
+}
+
+.testimonial4   {
+    background-color: red;
+}
+
+.container-lg .row  {
+    display: flex;
+    justify-content: center;
+}
+
+#testimonial-section .container    {
+    margin-bottom: 50px;
+}
+
+.team-description   {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.testimonial-section-footer {
+    padding:50px;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonial-section-footer button  {
+    padding:20px;
+}
+
+/*FAQ*/
