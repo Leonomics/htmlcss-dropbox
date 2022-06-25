@@ -111,6 +111,8 @@ header{
     flex-basis: calc(100%/1);
 }
 
+
+
 /*COMPONENTS*/
 .hero__button {
     display: inline-block;
@@ -162,16 +164,22 @@ header{
 
 .radio-wrapper  {
     gap:64px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .card-wrapper *   {
     /*border: 1px solid black;*/
     padding: 20px;
-    flex-basis: 33%;
     margin-bottom: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+}
+
+.col    {
+    flex-basis: calc(100%/3);
+    margin: 0px;
 }
 
 #plan   {
@@ -187,8 +195,15 @@ header{
     border: 1px solid lightgrey;
 }
 
+.card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .card__header   {
     border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
 }
 
 .try-button     {
@@ -196,11 +211,47 @@ header{
     color: white;
 }
 
-.number-of-users::before  {
-    font-family: "Font Awesome 5 Free";
-    content: '\f007'
+
+
+/*CARDS*/
+.number-of-users    {
+    display: flex;
 }
 
+.space  {
+    display: flex;
+}
+
+.functions  {
+    display: flex;
+}
+
+.cost   {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 0px;
+}
+
+.period {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.acquista-ora   {
+    display: flex;
+    align-items: center;
+    
+}
+
+.punti-salienti li{
+    display: flex;
+}
+
+/*bigger card*/
+.big-card-body    {
+    display: flex;
+    flex-direction: row;
+}
 
 /*PARTNER*/
 
