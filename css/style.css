@@ -186,6 +186,7 @@ header{
 .col    {
     flex-basis: calc(100%/3);
     margin: 0px;
+    max-width: 399px;
 }
 
 #plan   {
@@ -205,6 +206,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 0px;
 }
 .card__header   {
     border-bottom: 1px solid lightgrey;
@@ -217,6 +219,32 @@ header{
     color: white;
 }
 
+.card__body li  {
+    display: flex;
+
+}
+
+.card-line  {
+    content: '';
+    background-color: lightgray;
+    width: 10px;
+    height: 1px;
+}
+
+.acquista-ora   {
+    position: relative;
+}
+
+.acquista-ora::after    {
+    content:'';
+    position:absolute;
+    background: lightgrey;
+    display:block;
+    width:100px;
+    height: 5px;
+    bottom:32px;
+    left: 40px;
+}
 
 
 /*CARDS*/
