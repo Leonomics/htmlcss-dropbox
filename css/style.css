@@ -300,6 +300,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-basis: 33.33%;
+    position: relative;
 }
 
 .testimonials-text  {
@@ -319,7 +320,56 @@ header{
     padding: 10px;
     aspect-ratio: 1;
     display: flex;
+    position:relative;
 }
+
+/*Hover effects*/
+
+.testimonial1:hover::after {
+    content: "";
+    display:block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 10px solid rgba(255, 255 ,255, 0.5);
+}
+
+.testimonial2:hover::after {
+    content: "";
+    display:block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 10px solid rgba(255, 255 ,255, 0.5);
+}
+
+.testimonial3:hover::after {
+    content: "";
+    display:block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 10px solid rgba(255, 255 ,255, 0.5);
+}
+
+.testimonial4:hover::after {
+    content: "";
+    display:block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 10px solid rgba(255, 255 ,255, 0.5);
+}
+
+
 
 .testimonial img    {
     justify-content: center;
@@ -341,6 +391,9 @@ header{
 .testimonial4   {
     background-color: red;
 }
+
+
+
 
 .container-lg .row  {
     display: flex;
@@ -374,10 +427,6 @@ header{
 }
 
 
-
-.testimonials-block div:hover {
-    background-color: antiquewhite;
-}
 
 /*FAQ*/
 .dropdown-content   {
