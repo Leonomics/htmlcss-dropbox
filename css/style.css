@@ -318,8 +318,13 @@ header{
     align-content: center;
     padding: 10px;
     aspect-ratio: 1;
+    display: flex;
 }
 
+.testimonial img    {
+    justify-content: center;
+    align-items: center;
+}
 
 .testimonial1   {
     background-color: lightgreen;
