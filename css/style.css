@@ -105,6 +105,12 @@ header{
 
 .col-8  {
     flex-basis: calc(100%*2/3);
+    position:relative;
+}
+
+.col-8 img  {
+    position: absolute;
+    top: 5px;
 }
 
 .col-12 {
